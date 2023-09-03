@@ -71,3 +71,110 @@ El "callback hell" se refiere a una situación en la programación en la que mú
 });
 ```
 
+## NPM
+npm es el sistema de gestión de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript, bajo Artistic License 2.0.
+
+## Configuración Inicial
+
+### Instalación de Node.js y npm
+
+Para usar Node.js y npm toca instalarlos localmente desde el siguiente enlace [node](https://nodejs.org/).
+
+### Creación de un Proyecto Node.js
+
+Desde una terminal entra en la carpeta donde desea iniciar el proyecto y ejecuta el siguiente comando el cual creara el archivo `package.json` el cual nos dara toda la informacion del proyecto
+
+```bash
+npm init -y
+```
+
+### Estructura Básica de un Proyecto
+
+La estructura de un proyecto Node.js puede variar, pero una estructura básica puede ser:
+
+| Nombre del Proyecto     |                                                        |
+| ----------------------- | ------------------------------------------------------ |
+| 📁 nombre-del-proyecto/ | Directorio principal del proyecto.                     |
+| ├── 📄 package.json     | Archivo de configuración del proyecto en formato JSON. |
+| ├── 📄 index.js         | Archivo JavaScript principal del proyecto.             |
+
+## Gestión de Paquetes con npm
+
+### Instalación de Paquetes
+
+Con el siguiente comando se descarga el paquete que desea ser guardado como dependencia en `package.json`
+
+```bash
+npm install [nombre-del-paquete]
+```
+
+Se puede realizar de la siguiente manera
+
+```bash
+npm i express
+```
+
+Con el siguiente lo instalamos en el proyecto y tambien nos genera el archivo `package-lock.json` el cual nos da una descripcion detallada de las versiones de los paquetes/dependencias que se estan utilizando
+
+```bash
+npm install
+```
+
+Otra forma de realizarlo
+
+```bash
+npm i
+```
+
+## Dependencias para Desarrollo
+
+Para empezar a usar unas dependecias para desarrollo. A la hora de hacer la instacion del paquete se debe especificar de la siguiente manera 
+
+```bash
+npm i -D [nombre-del-paquete]
+```
+
+### Actualización y Eliminación de Paquetes
+
+Comando para actualizar un paquete a su última versión
+
+```bash
+npm update [nombre-del-paquete]
+```
+
+La forma corta del comando update es up
+
+```bash
+npm up [nombre-del-paquete]
+```
+
+Si desea actualizar todas las dependencias del proyecto
+
+```bash
+npm up
+```
+
+Si desea actualizar a una version en especifico
+
+```bash
+npm up [nombre-del-paquete@version]
+```
+
+Ejemplo
+
+```bash
+npm up nodemon@2.0.13
+```
+
+Para eliminar un paquete y/o dependencia
+
+```bash
+npm uninstall [nombre-del-paquete]
+```
+
+Y su forma corta es `un`
+
+```bash
+npm un [nombre-del-paquete]
+```
+

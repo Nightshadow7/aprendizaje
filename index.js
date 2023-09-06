@@ -6,7 +6,6 @@ import path from 'path'
 import { replaceTemplate } from './modules/replaceTemplate.js';
 import slugify from 'slugify';
 
-
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const tempOverview = fs.readFileSync(`${__dirname}/templates/overview.html` , `utf-8`);

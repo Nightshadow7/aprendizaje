@@ -178,3 +178,5 @@ Y su forma corta es `un`
 npm un [nombre-del-paquete]
 ```
 
+## La impotancia de las tareas en Node.js
+![Como funcionan las tareas en Node.js](./txt/How_work_Node.js.png)

@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Expenses from './components/Expenses';
+import Expenses from './components/Expenses/Expenses.js';
 
 function App() {
   const expenses = [
@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Expenses items={expenses}/>
+        <Expenses cards={expenses}/>
       </header>
     </div>
   );
